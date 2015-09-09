@@ -291,6 +291,7 @@ nav .slide .name {
   width:740px;
   float:right;
   background: black;
+  position: relative;
 }
 
 ul, li {
@@ -310,7 +311,6 @@ li {
 .carousel {
   width: 100%;
   height: 623px;
-  position: relative;
   transition: all 250ms;
   overflow: hidden;
 }
@@ -322,7 +322,7 @@ li {
 }
 .carousel__photos--item {
   position: relative;
-  display: inline-block;
+  display: none;
   vertical-align: top;
   margin: auto;
   opacity: 0.75;
@@ -330,6 +330,7 @@ li {
 }
 .carousel__photos--item:target {
   opacity: 1;
+  display:inline-block;
 }
 .carousel__photos--image {
   display: block;
